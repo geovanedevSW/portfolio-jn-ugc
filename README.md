@@ -1,4 +1,4 @@
-# 🎨 Jhenifer Nogueira Studio
+# 🎨 Jhenifer Nogueira UGC
 
 A high-end digital portfolio and briefing system designed for a creative studio. This project focuses on a premium, minimalist aesthetic, leveraging modern web technologies to provide a seamless and sophisticated user experience.
 
