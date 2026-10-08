@@ -69,7 +69,7 @@ function BriefingSelect({
         <SelectTrigger id={id} className={selectInputCls}>
           <SelectValue placeholder={placeholder} />
         </SelectTrigger>
-        <SelectContent className="z-[100] rounded-xl border-white/10 bg-[#151515] p-1.5 text-white shadow-xl">
+        <SelectContent className="z-[100] rounded-xl border-white/10 bg-[var(--purple-900)] p-1.5 text-white shadow-xl">
           {options.map((option) => (
             <SelectItem
               key={option}
@@ -369,7 +369,7 @@ export function ContactForm() {
           <button
             type="submit"
             disabled={isLoading || sent}
-            className="inline-flex w-full items-center justify-center gap-3 rounded-full bg-white px-8 py-4 text-[11px] font-bold uppercase tracking-[0.2em] text-[var(--ink)] transition-all duration-300 hover:scale-[1.02] hover:-translate-y-0.5 hover:shadow-[0_10px_20px_-10px_rgba(255,255,255,0.3)] disabled:scale-100 disabled:opacity-75 md:w-auto group"
+            className="inline-flex w-full items-center justify-center gap-3 rounded-full bg-[var(--primary)] px-8 py-4 text-[11px] font-bold uppercase tracking-[0.2em] text-white transition-all duration-300 hover:scale-[1.02] hover:-translate-y-0.5 hover:bg-[var(--purple-700)] hover:shadow-[0_10px_20px_-10px_rgba(139,76,199,0.45)] disabled:scale-100 disabled:opacity-75 md:w-auto group"
           >
             {isLoading ? (
               <>

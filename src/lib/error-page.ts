@@ -11,10 +11,10 @@ export function renderErrorPage(): string {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       :root {
-        --bg: #0a0a0a;
+        --bg: #28103f;
         --text: #ffffff;
         --text-muted: rgba(255, 255, 255, 0.5);
-        --accent: #c9a86a;
+        --accent: #8b4cc7;
         --border: rgba(255, 255, 255, 0.1);
       }
       body {
@@ -67,12 +67,12 @@ export function renderErrorPage(): string {
         transition: all 0.3s ease;
       }
       .primary {
-        background: var(--text);
-        color: var(--bg);
+        background: var(--accent);
+        color: var(--text);
       }
       .primary:hover {
         transform: translateY(-2px);
-        box-shadow: 0 10px 20px -10px rgba(255,255,255,0.3);
+        box-shadow: 0 10px 20px -10px rgba(139,76,199,0.45);
       }
       .secondary {
         background: transparent;

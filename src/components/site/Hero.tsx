@@ -30,7 +30,7 @@ export function Hero() {
             <StaggerLines
               lines={["Conteúdos que", "conectam.", "Marcas que", "vendem."]}
               italicWord="conectam"
-              italicWordColor="#C9A86A"
+              italicWordColor="var(--accent)"
             />
           </h1>
 

@@ -20,7 +20,7 @@ export function PackagesModal({ isOpen, onClose, onSelectPackage }: PackagesModa
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => { if (!open) onClose() }}>
-      <DialogContent className="w-[calc(100%-2rem)] max-w-4xl max-h-[90vh] overflow-hidden rounded-3xl border border-white/10 bg-[#0a0a0a]/95 p-0 shadow-2xl backdrop-blur-xl sm:rounded-3xl">
+      <DialogContent className="w-[calc(100%-2rem)] max-w-4xl max-h-[90vh] overflow-hidden rounded-3xl border border-white/10 bg-[var(--purple-900)]/95 p-0 shadow-2xl backdrop-blur-xl sm:rounded-3xl">
         <div className="max-h-[90vh] space-y-8 overflow-y-auto overscroll-contain p-6 md:space-y-10 md:p-10">
           <div className="text-center max-w-2xl mx-auto">
             <DialogTitle className="font-display text-3xl font-semibold tracking-tight text-white md:text-[42px]">
@@ -41,21 +41,21 @@ export function PackagesModal({ isOpen, onClose, onSelectPackage }: PackagesModa
                 onClick={() => handleSelectPackage(pkg)}
                 className={`group relative flex flex-col rounded-3xl p-6 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
                   selectedId === pkg.id
-                    ? "border-2 border-[var(--accent)] bg-[var(--accent)]/10 shadow-[0_0_20px_rgba(201,168,106,0.15)]"
+                    ? "border-2 border-[var(--accent)] bg-[var(--accent)]/10 shadow-[0_0_20px_rgba(139,76,199,0.15)]"
                     : pkg.featured
                       ? "border-2 border-[var(--accent)]/40 bg-white/[0.02] shadow-sm"
                       : "border-2 border-white/10 bg-white/[0.01] hover:border-white/20 hover:bg-white/[0.03] hover:shadow-lg"
                 }`}
               >
                 {pkg.featured && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[var(--accent)] px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-black">
+                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[var(--accent)] px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-white">
                     Mais Popular
                   </span>
                 )}
 
                 {selectedId === pkg.id && (
                   <div className="absolute top-4 right-4 h-6 w-6 rounded-full bg-[var(--accent)] flex items-center justify-center shadow-lg">
-                    <Check className="h-4 w-4 text-black" strokeWidth={3} />
+                    <Check className="h-4 w-4 text-white" strokeWidth={3} />
                   </div>
                 )}
 
