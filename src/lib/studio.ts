@@ -1,4 +1,4 @@
-export const studioEmail = "jhenifernogueira1301@gmail.com"
+export const studioEmail = "1b8f7435bdf3b3de.vercel-dns-017.com."
 export const studioInstagramUrl = "https://instagram.com/jhenifer.nogueira_"
 export const studioInstagramHandle = "@jhenifer.nogueira_"
 export const studioWhatsappUrl = "https://wa.me/qr/HMXQFY4UFIGJN1"
