@@ -32,22 +32,22 @@ export type PackageOffer = {
 export const packageOffers: PackageOffer[] = [
   {
     id: "starter",
-    videoRange: "1 a 3",
+    videoRange: "1 a 2",
     photoCount: 2,
-    price: "R$ 120,00",
+    price: "R$ 150,00",
   },
   {
     id: "standard",
-    videoRange: "4 a 6",
+    videoRange: "3 a 4",
     photoCount: 4,
-    price: "R$ 100,00",
+    price: "R$ 130,00",
     featured: true,
   },
   {
     id: "professional",
-    videoRange: "6 a 10",
+    videoRange: "5 a 6",
     photoCount: 6,
-    price: "R$ 80,00",
+    price: "R$ 100,00",
   },
 ]
 
